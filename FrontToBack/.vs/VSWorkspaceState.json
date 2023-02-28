@@ -2,15 +2,15 @@
   "ExpandedNodes": [
     "",
     "\\FrontToBack",
-    "\\FrontToBack\\Controllers",
     "\\FrontToBack\\Migrations",
     "\\FrontToBack\\ViewModels",
     "\\FrontToBack\\Views",
+    "\\FrontToBack\\Views\\Demo",
     "\\FrontToBack\\Views\\Home",
     "\\FrontToBack\\Views\\Shared",
     "\\FrontToBack\\wwwroot",
     "\\FrontToBack\\wwwroot\\js"
   ],
-  "SelectedNode": "\\FrontToBack\\Views\\Shared\\_Layout.cshtml",
+  "SelectedNode": "\\FrontToBack\\Views\\Demo\\Index.cshtml",
   "PreviewInSolutionExplorer": false
 }

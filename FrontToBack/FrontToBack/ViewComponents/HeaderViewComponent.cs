@@ -19,8 +19,17 @@ namespace FrontToBack.ViewComponents
 
 
             string basket = Request.Cookies["basket"];
-            var products = JsonConvert.DeserializeObject<List<BasketVM>>(basket);
-            ViewBag.BasketProductCount = products.Count();
+            if (string.IsNullOrWhiteSpace(basket))
+            {
+                BasketVM basketVM = new();
+                basketVM.BasketCount = 0;
+            }
+            else
+            {
+                var products = JsonConvert.DeserializeObject<List<BasketVM>>(basket);
+                ViewBag.BasketProductCount = products.Count();
+            }
+          
             Bio bio = _appDbContext.Bios.FirstOrDefault();
             return View(await Task.FromResult(bio));
 
